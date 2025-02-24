@@ -1,0 +1,46 @@
+.imagestyle{
+    width: 45px;
+    height: 45px;
+    /* background: black; */
+}
+.top1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip::after {
+  content: attr(data-title);
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  bottom: 150%; /* Position above */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none; /* Prevent hover flickering */
+}
+
+/* Show tooltip on hover */
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* <img src="icon.png" class="tooltip" data-title="This is a custom tooltip"> */

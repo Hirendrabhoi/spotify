@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utility1.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="top top1">
+      <div class="left-group">
+
+        <img src="/allpngs/logok.png" alt="spotify" style="width: 35px;
+      height: 35px ;" class="logo imagestyle">
+      <img src="/allpngs/homepage.png" alt="home" class="home imagestyle">
+      <div id="search" class="top1">
+        <img src="/allpngs/search.webp" class="search">
+        <input type="text" placeholder="what do you want to play?">
+        <img src="/allpngs/folder (2).png" alt="browse" class="browse">
+      </div>
+      <img src="allpngs/hamburger.png" class="hamburger" width="20px" style="filter: invert(1);">
+          
+    </div>
+      <div class="right-group">
+
+        <span class="top1" id="install" style="gap: 4px;"><img style="width: 20px; height: 20px;"
+          src="/allpngs/install.png" alt="install" class="install">Install
+          App</span>
+          <span id="Sing">Sing Up</span>
+          <button>Log in</button>
+         
+        </div>
+      </div>
+
+    <div class="body">
+
+      <div class="left">
+        <div class="lefttop">
+          <span class="library"><img src="allpngs/music-library.png">Your library</span>
+          <p class="hamburgercross">&#10005;</p>
+        </div>
+        <div class="scroll1">
+          <!-- <div class="playlist">
+            <h5>Create your first playlist</h5>
+            <p>It's easy, we'll help you</p>
+            <button>Create playlist</button>
+          </div>
+          <div class="podcast">
+            <h5>Let's find some podcast to follow</h5>
+            <p>we'll keep updated on new episode</p>
+            <button>Browse podcasts</button>
+          </div> -->
+          <div class="scroll">
+            <h3>Your playlist</h3>
+            <ul class="playlists">
+            </ul>
+          </div>
+        </div>
+        <footer>
+          <a href="#">Legal</a>
+          <a href="#">Safety & privacycenter</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Cookies</a>
+          <a href="#">About Ads</a>
+          <a href="#">Accessibility</a>
+        </footer>
+        <button class="lang"><img src="allpngs/globe.png">English</button>
+      </div>
+
+
+      <div class="right">
+
+        <div class="artiest">
+          <div class="intro">
+            <h2>Playlist</h2>
+            <span>show all</span>
+          </div>
+          <div class="cards">
+            
+          </div>
+
+          
+        </div>
+      </div>
+
+    </div>
+    <div class="con">
+    <div class="player">
+      <div class="info">
+        
+      </div>
+      <div class="controle">
+        <svg id="pre" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+          <path d="M8.06492 12.6258C8.31931 13.8374 9.67295 14.7077 12.3802 16.4481C15.3247 18.3411 16.797 19.2876 17.9895 18.9229C18.3934 18.7994 18.7654 18.5823 19.0777 18.2876C20 17.4178 20 15.6118 20 12C20 8.38816 20 6.58224 19.0777 5.71235C18.7654 5.41773 18.3934 5.20057 17.9895 5.07707C16.797 4.71243 15.3247 5.6589 12.3802 7.55186C9.67295 9.29233 8.31931 10.1626 8.06492 11.3742C7.97836 11.7865 7.97836 12.2135 8.06492 12.6258Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+          <path d="M4 4L4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+      </svg>
+     <img id="play" src="player/play.svg" alt="svg">
+        <svg id="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+          <path d="M15.9351 12.6258C15.6807 13.8374 14.327 14.7077 11.6198 16.4481C8.67528 18.3411 7.20303 19.2876 6.01052 18.9229C5.60662 18.7994 5.23463 18.5823 4.92227 18.2876C4 17.4178 4 15.6118 4 12C4 8.38816 4 6.58224 4.92227 5.71235C5.23463 5.41773 5.60662 5.20057 6.01052 5.07707C7.20304 4.71243 8.67528 5.6589 11.6198 7.55186C14.327 9.29233 15.6807 10.1626 15.9351 11.3742C16.0216 11.7865 16.0216 12.2135 15.9351 12.6258Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+          <path d="M20 5V19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+      </svg>
+      </div>
+      
+      <div class="time"> </div>
+      <div class="volume">
+        <img src="player/volume.svg">
+        <input type="range" id="slider">
+      </div>
+    </div>
+    <div class="duration">
+      <div class="circle">
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

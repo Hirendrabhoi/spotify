@@ -1,0 +1,822 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    box-sizing: border-box;
+}
+
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background: black;
+    padding: 5px 11px;
+}
+
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Spreads out items */
+    flex-wrap: wrap;
+    /* Allows items to wrap on smaller screens */
+    position: relative;
+    width: 100%;
+    padding: 11px;
+    gap: 20px;
+    /* Maintains consistent gap between elements */
+}
+
+.logo,
+.home,
+#search,
+#install,
+#Sing,
+.top button {
+    position: static;
+    /* Removes absolute positioning to prevent overlap */
+    scale: 1;
+    cursor: pointer;
+}
+
+.right-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Close spacing between spans and button */
+}
+
+.left-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Close spacing between spans and button */
+}
+
+
+/* .logo {
+    position: absolute;
+    z-index: 2;
+    scale: 1;
+    cursor: pointer;
+} */
+
+.home {
+    filter: invert(1);
+    background: #dadada;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.home:hover {
+    scale: 1.1;
+    transition: scale 0.2s;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    background-color: #121212;
+    border: none;
+    outline: 0;
+    border-radius: 26px;
+    padding: 2px 10px;
+    transition: padding 0.5s ease;
+    gap: 10px;
+    /* Space between search icon, input, and browse */
+}
+
+.top #search:hover {
+    background: #242424;
+    border: 1px solid white;
+}
+
+#install {
+
+    color: #dadada;
+    scale: 1;
+    cursor: pointer;
+
+}
+
+#install:hover {
+    color: white;
+    scale: 1.05;
+}
+
+#Sing {
+
+    color: #dadada;
+    scale: 1;
+    cursor: pointer;
+}
+
+#Sing:hover {
+    color: white;
+    scale: 1.05;
+}
+
+.top span {
+    color: white;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.top button {
+    border-radius: 26px;
+    border: none;
+    outline: none;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    width: 75px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.top button:hover {
+    scale: 1.03;
+    background: #dadada;
+    color: black;
+}
+
+.search {
+    filter: invert(1) brightness(0.5);
+    background: transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.search:hover {
+    filter: invert(1);
+}
+
+.browse {
+    width: 22px;
+    height: 22px;
+    filter: invert(1) brightness(0.5);
+    margin: 5px 10px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.browse:hover {
+    filter: invert(1);
+}
+
+.install {
+    filter: invert(1) brightness(0.5);
+    width: 10px;
+    height: 10px;
+}
+
+.install:hover {
+    filter: invert(1);
+}
+
+#search input {
+    width: 225px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-right: 1px solid white;
+    color: white;
+    padding-left: 10px;
+}
+
+.left {
+    border: none;
+    border-radius: 7px;
+    /* margin-top: 20px; */
+    background: #121212;
+    width: 22%;
+    height: 100%;
+    padding: 5px;
+
+}
+
+.left .lefttop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px 20px;
+}
+
+.left .lefttop span {
+    color: #575757;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.left .lefttop span:hover {
+    color: white;
+    transition: color 0.4s ease;
+
+}
+
+.left .lefttop span img {
+    width: 22px;
+    filter: invert(1) brightness(0.5);
+    margin-right: 5px;
+    /* color: #575757; */
+}
+
+.left .lefttop span:hover img {
+    filter: invert(1);
+    transition: color 0.4s ease;
+}
+
+.lefttop p {
+    color: #575757;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 37px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.lefttop p:hover {
+    background-color: #242424;
+    color: rgb(176, 176, 176);
+    transition: color 0.4s ease;
+}
+
+.playlist {
+    background: #242424;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.playlist p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.playlist button {
+    border: none;
+    font-size: 11px;
+    font-weight: 700;
+    outline: none;
+    padding: 5px 10px;
+    width: 120px;
+    height: 34px;
+    border-radius: 17px;
+    margin: 20px 0 5px;
+    cursor: pointer;
+}
+
+.podcast {
+    background: #242424;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+.podcast p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.podcast button {
+    border: none;
+    font-size: 11px;
+    font-weight: 700;
+    outline: none;
+    padding: 5px 10px;
+    width: 120px;
+    height: 34px;
+    border-radius: 17px;
+    margin: 20px 0px 5px;
+    cursor: pointer;
+
+}
+
+.left footer a {
+    text-decoration: none;
+    color: #dadada;
+    font-weight: 200;
+    font-size: 11px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.left footer {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 4px;
+}
+
+.lang {
+    color: white;
+    background: black;
+    font-size: 15px;
+    border-radius: 29px;
+    padding: 3px 10px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin: 25px 20px 25px;
+    cursor: pointer;
+}
+
+.lang img {
+    width: 17px;
+    filter: invert(1);
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.scroll1 {
+    transition: box-shadow 0.3s ease-in-out;
+    height: 300px;
+    width: 100%;
+    padding: 4px;
+    overflow-y: hidden;
+    transition: overflow-y 0.3s ease-out;
+    /* position: relative; */
+}
+
+.scroll1:hover {
+    overflow-y: overlay;
+
+}
+
+.scroll-content.shadow {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* Apply shadow at the top */
+}
+
+.scroll1::-webkit-scrollbar {
+    width: 10px;
+    /* position: absolute; */
+}
+
+.scroll1::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scroll1::-webkit-scrollbar-thumb {
+    background: rgba(96, 96, 96, 0.6);
+}
+
+.scroll1::-webkit-scrollbar-thumb:hover {
+    background: rgba(94, 94, 94, 1);
+
+}
+
+.scroll {
+    color: white;
+}
+
+.playlists li {
+    /* list-style-type: decimal; */
+    border: 2px solid white;
+    padding: 10px 5px;
+    margin: 3px;
+    padding-left: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+.body {
+    display: flex;
+}
+
+.right {
+    background: linear-gradient(4deg, #121212 83%, #212121);
+    width: 77%;
+    margin: 0px 10px;
+    height: inherit;
+    /* border: 1px solid red; */
+    padding: 20px;
+    border-radius: 7px;
+
+}
+
+.right .artiest {
+    color: #ffffff;
+
+}
+
+.artiest span {
+    color: #b3b3b3;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.artiest span:hover {
+    text-decoration: underline;
+}
+
+.artiest h2 {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.artiest h2:hover {
+    text-decoration: underline;
+}
+
+.artiest .intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    width: 170px;
+    height: 255px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background 1s ease-in;
+}
+
+.card:hover,
+.play:hover {
+    background: linear-gradient(345deg, #2b2b2b, #121212);
+}
+
+.card:hover .play,
+.play:hover {
+    background: rgb(4, 232, 4);
+    opacity: 1;
+    top: 110px;
+}
+
+.card img {
+    /* border-radius: 50%; */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.card1 {
+    width: 170px;
+    height: 210px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background 1s ease-in;
+}
+
+.card1 img {
+    border-radius: 0;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.card span {
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.card span:hover {
+    text-decoration: underline;
+}
+
+.card p {
+    font-size: 12px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+#Layer_1 {
+    height: 26px;
+    width: 20px;
+    border-radius: 0;
+}
+
+.play {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: rgb(4, 232, 4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    position: absolute;
+    right: 8px;
+    top: 120px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in, background 0.3s ease, top 1s ease;
+
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    height: 40vh;
+}
+
+.con {
+    background: rgb(59, 59, 59);
+    width: 70vw;
+    z-index: 4;
+    /* Responsive width */
+    height: 10vh;
+    /* Responsive height */
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 1vh 2vw;
+    position: fixed;
+    transform: translateX(8%);
+}
+
+.player {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 5px;
+    /* Prevent wrapping if you want consistent positions */
+
+    /* Use responsive padding */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
+    position: relative;
+    /* Keep relative positioning for absolute elements */
+}
+
+.controle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    /* Consistent gap between buttons */
+    flex-shrink: 0;
+    margin: 2px auto;
+    /* Prevent controls from shrinking */
+}
+
+#pre,
+#play,
+#next {
+    width: 5vh;
+    /* Button size relative to player height */
+    height: 5vh;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+
+#pre:hover,
+#play:hover,
+#next:hover {
+    transform: scale(1.1);
+    /* Hover effect for buttons */
+}
+
+.duration {
+    width: 70%;
+    height: 1vh;
+    background: rgba(165, 165, 165, 0.3);
+    border-radius: 10px;
+    position: relative;
+
+    /* top: 17px; */
+    cursor: pointer;
+    margin: auto;
+}
+
+.circle {
+    background: white;
+    border-radius: 50%;
+    width: 1.5vh;
+    /* Size relative to player height */
+    height: 1.5vh;
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    left: 0;
+    /* Start at the beginning of the bar */
+    transform: translate(-50%, -50%);
+    /* Center the circle exactly */
+    transition: left 0.5s ease;
+    /* Smooth transition for movement */
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+}
+
+.time {
+    color: white;
+}
+
+.info {
+    color: white;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 10px;
+}
+
+.volume img {
+    width: 25px;
+    cursor: pointer;
+}
+
+#slider {
+    width: 50px;
+    cursor: pointer;
+}
+
+#slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: rgba(174, 105, 105, 0.972);
+    /* Circle color */
+    border-radius: 50%;
+    /* Makes it a circle */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 1200px) {
+    .top {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    #search input {
+        width: 180px;
+    }
+
+    .right-group {
+        gap: 8px;
+        /* Slightly reduce spacing in smaller screens */
+    }
+
+    .top button {
+        width: 65px;
+        height: 40px;
+    }
+
+    #install,
+    #Sing {
+        font-size: 14px;
+    }
+
+    .left {
+        /* border: 1px solid red; */
+        z-index: 3;
+        position: absolute;
+        left: -150%;
+        width: 50%;
+        height: 100vh;
+        transition: all 1s;
+        top: 0%;
+    }
+
+    .right {
+        width: 100%;
+
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 500px) {
+    #search input {
+        width: 150px;
+    }
+
+    .right-group {
+        gap: 5px;
+    }
+
+    .logo,
+    .home,
+    #install,
+    #Sing,
+    .top button {
+        scale: 0.9;
+    }
+
+    .left .lefttop span {
+        font-size: 15px;
+    }
+
+    /* .info {
+        font-size: 10px;
+    } */
+
+    /* .time {
+        font-size: 10px;
+        margin-left: 5px;
+    } */
+
+    .cards {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .left {
+        /* border: 1px solid red; */
+        z-index: 3;
+        position: absolute;
+        left: -150%;
+        width: 50%;
+        height: 100vh;
+        transition: all 1s;
+        top: 0%;
+    }
+
+    .right-group {
+        position: absolute;
+        left: -110%;
+        flex-direction: column;
+        border: 1px solid red;
+        display: none;
+    }
+
+    .info {
+        font-size: 18px;
+    }
+
+    .time {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+
+    #search input {
+        display: none;
+        transition: all 0.5s ease;
+    }
+
+    .browse {
+        display: none;
+        transition: all 0.5s ease;
+    }
+
+    .top #search {
+        padding: 0px 0px;
+        transition: all 0.5s ease;
+    }
+
+    .search {
+        scale: 1;
+    }
+
+    .con {
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .player {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
