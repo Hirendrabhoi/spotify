@@ -6,7 +6,7 @@ let currfolder;
 //getting the song from the server
 async function getsongs(folder) {
     currfolder = folder
-    let a = await fetch(`http://127.0.0.1:3000/${folder}/`)
+    let a = await fetch(`/${folder}/`)
     let ans = await a.text();
     let div = document.createElement('div')
     div.innerHTML = ans;
@@ -70,7 +70,7 @@ function playmusic(track, pause = false) {
 //display folder in the page
 async function displayfolder() {
 
-    let a = await fetch(`http://127.0.0.1:3000/songs/`)
+    let a = await fetch(`/songs/`)
     let ans = await a.text();
     let div = document.createElement('div')
     div.innerHTML = ans;
